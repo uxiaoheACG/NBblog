@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="css/custom.css"> <!-- 本地CSS -->
+</head>
+<body>
+
+<div class="container">
+    <!-- 左侧导航栏 -->
+    <nav class="sidebar">
+        <h1 class="sidebar-title">📚 我的博客目录</h1>
+        <ul class="nav-list">
+            <li><a href="#" class="nav-level-1">一级标题 1</a></li>
+            <li><a href="#" class="nav-level-2">二级标题 1.1</a></li>
+            <li><a href="#" class="nav-level-2">二级标题 1.2</a></li>
+            <li><a href="#" class="nav-level-3">三级标题 1.2.1</a></li>
+            <li><a href="#" onclick="loadBlog('blogs/test.md')" class="nav-level-1">博客 1</a></li>
+        </ul>
+    </nav>
+
+    <!-- 右侧内容区 -->
+    <main class="content">
+        <div id="content">
+            点击左侧目录查看博客内容...
+        </div>
+    </main>
+</div>
+
+<!-- marked.js 用于渲染 Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/render.js"></script>
+
+</body>
+</html>

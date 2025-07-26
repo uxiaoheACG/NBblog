@@ -1,0 +1,72 @@
+/* 基础布局 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* 左侧导航栏 */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    display: block;
+    text-decoration: none;
+    padding: 6px 4px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-list a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 导航样式：一级/二级/三级 */
+.nav-level-1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000; /* 蓝色 */
+}
+
+.nav-level-2 {
+    font-size: 14px;
+    margin-left: 16px;
+    color: #1f553d;
+}
+
+.nav-level-3 {
+    font-size: 12px;
+    margin-left: 32px;
+    color: #494221;
+}
+
+/* 右侧内容区域 */
+.content {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    background-color: #fafafa;
+}
