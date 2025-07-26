@@ -6,8 +6,7 @@
 - 支持加粗 **bold**
 
 
-<img src="../imgs/go.png" alt="">
-![图片](../imgs/go.png)
+<img src="imgs/go.png" alt="">
 
 **a**
 
