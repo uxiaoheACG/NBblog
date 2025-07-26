@@ -5,7 +5,7 @@ function loadBlog(path) {
             // 替换 Markdown 中图片路径，给相对路径加仓库名前缀
             const fixedMd = md.replace(/!\[(.*?)\]\((.*?)\)/g, (match, alt, url) => {
                 if (!url.startsWith('http') && !url.startsWith('/')) {
-                    url = '/myblog/' + url; // 这里替换成你的仓库名
+                    url = '/NBblog/' + url; // 这里替换成你的仓库名
                 }
                 return `![${alt}](${url})`;
             });
