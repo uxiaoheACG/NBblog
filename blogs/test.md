@@ -6,7 +6,8 @@
 - 支持加粗 **bold**
 
 
-<img src="/myblog/imgs/go.png" alt="">
+<img src="../imgs/go.png" alt="">
+![图片](../imgs/go.png)
 
 **a**
 
