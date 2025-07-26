@@ -2,10 +2,10 @@ function loadBlog(path) {
     fetch(path)
         .then(res => res.text())
         .then(md => {
-            // 替换 Markdown 中图片路径，给相对路径加仓库名前缀
+            // 给 Markdown 中的相对图片路径加上仓库名前缀 /NBblog/
             const fixedMd = md.replace(/!\[(.*?)\]\((.*?)\)/g, (match, alt, url) => {
                 if (!url.startsWith('http') && !url.startsWith('/')) {
-                    url = '/NBblog/' + url; // 这里替换成你的仓库名
+                    url = '/NBblog/' + url;
                 }
                 return `![${alt}](${url})`;
             });
