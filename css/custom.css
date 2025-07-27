@@ -1,4 +1,4 @@
-/* 基础布局 */
+/* 基础布局和你之前的样式保持一致 */
 body, html {
     margin: 0;
     padding: 0;
@@ -44,23 +44,39 @@ body, html {
     background-color: #f0f0f0;
 }
 
-/* 导航样式：一级/二级/三级 */
+/* 一级菜单 */
 .nav-level-1 {
     font-size: 16px;
     font-weight: bold;
-    color: #000000; /* 蓝色 */
+    color: #000000;
 }
 
+.nav-level-1.toggle {
+    cursor: pointer;
+    padding: 4px 0;
+    user-select: none;
+}
+
+/* 二级菜单 */
 .nav-level-2 {
     font-size: 14px;
     margin-left: 16px;
     color: #1f553d;
 }
 
-.nav-level-3 {
-    font-size: 12px;
-    margin-left: 32px;
-    color: #494221;
+/* 子菜单过渡隐藏展开 */
+.nav-sub {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-left: 12px;
+    padding-left: 8px;
+    border-left: 2px solid #eee;
+}
+
+/* 展开时设置大 max-height */
+.nav-sub.expanded {
+    max-height: 500px; /* 大于最大内容高度 */
 }
 
 /* 右侧内容区域 */

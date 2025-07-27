@@ -18,3 +18,4 @@ function loadBlog(path) {
             console.error(err);
         });
 }
+

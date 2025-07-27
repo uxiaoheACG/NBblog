@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>我的博客</title>
-    <link rel="stylesheet" href="css/custom.css"> <!-- 本地CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body>
-
 <div class="container">
     <!-- 左侧导航栏 -->
     <nav class="sidebar">
         <h1 class="sidebar-title">📚 我的博客目录</h1>
         <ul class="nav-list">
-            <li><a href="#" class="nav-level-1" onclick="loadBlog('blogs/one.md')">go 开篇</a></li>
+            <li>
+                <div class="nav-level-1 toggle">GO语言</div>
+                <ul class="nav-sub">
+                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/one.md')">go 开篇</a></li>
+                </ul>
+            </li>
 
+            <li>
+                <div class="nav-level-1 toggle">数据类型介绍</div>
+                <ul class="nav-sub">
+                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基本数据类型.md')">基本数据类型</a></li>
+                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/复合数据类型.md')">复合数据类型</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="nav-level-1 toggle">函数</div>
+                <ul class="nav-sub">
+                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/函数.md')">函数</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="nav-level-1 toggle">指针</div>
+                <ul class="nav-sub">
+                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/指针.md')">指针</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
@@ -29,5 +54,16 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="js/render.js"></script>
 
+<script>
+    // 点击一级标题，切换子菜单展开收起
+    document.querySelectorAll('.nav-level-1.toggle').forEach(item => {
+        item.addEventListener('click', () => {
+            const subMenu = item.nextElementSibling;
+            if (subMenu && subMenu.classList.contains('nav-sub')) {
+                subMenu.classList.toggle('expanded');
+            }
+        });
+    });
+</script>
 </body>
 </html>
