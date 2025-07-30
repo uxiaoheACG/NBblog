@@ -86,3 +86,19 @@ body, html {
     overflow-y: auto;
     background-color: #fafafa;
 }
+
+ table {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+pre{
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #b5b5b5;
+}
