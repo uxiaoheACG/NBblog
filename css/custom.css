@@ -107,3 +107,31 @@ pre{
 table>thead>tr>th {
     background-color: #b5b5b5;
 }
+
+/* 大标题样式 */
+.nav-major {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 0;
+    color: #2a2a2a;
+    background-color: #e6e6e6;
+    padding-left: 4px;
+    border-left: 4px solid #999;
+}
+
+.nav-major.toggle {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* 大标题展开/收起容器 */
+.nav-group {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 8px;
+}
+
+.nav-group.expanded {
+    max-height: 1000px; /* 大于内容高度即可 */
+}

@@ -11,71 +11,139 @@
     <nav class="sidebar">
         <h1 class="sidebar-title">📚 我的博客目录</h1>
         <ul class="nav-list">
+
+            <!-- 大标题 -->
             <li>
-                <div class="nav-level-1 toggle">GO语言</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/one.md')">go 开篇</a></li>
+                <div class="nav-major toggle">基础篇</div>
+                <ul class="nav-group">
+
+                    <!-- 原有的一级标题 -->
+                    <li>
+                        <div class="nav-level-1 toggle">GO语言</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/one.md')">go 开篇</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">Go命令</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/go命令.md')">go 命令</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">数据类型介绍</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/基本数据类型.md')">基本数据类型</a></li>
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/复合数据类型.md')">复合数据类型</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">函数</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/函数.md')">函数</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">指针</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/指针.md')">指针</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">方法与接口</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/方法与接口.md')">方法与接口</a></li>
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/泛型.md')">泛型</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">错误处理</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/错误处理.md')">错误处理</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">并发编程</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/并发与等待组.md')">并发/等待组</a></li>
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/通道.md')">通道</a></li>
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/sync.md')">sync包</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">函数介绍，扩展</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/语句介绍.md')">输入输出相关/for循环</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">context包</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/context.md')">context包介绍</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="nav-level-1 toggle">net/http包</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/netHttp.md')">net/http包</a></li>
+                        </ul>
+                    </li>
 
                 </ul>
             </li>
 
+<!--            一个扩展-->
             <li>
-                <div class="nav-level-1 toggle">数据类型介绍</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/基本数据类型.md')">基本数据类型</a></li>
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/复合数据类型.md')">复合数据类型</a></li>
+                <div class="nav-major toggle">web开发篇</div>
+                <ul class="nav-group">
+
+                    <li>
+                        <div class="nav-level-1 toggle">扩展格式</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/one.md')">暂无内容</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+<!--            到这里-->
+
+            <li>
+                <div class="nav-major toggle">实用工具篇</div>
+                <ul class="nav-group">
+
+                    <li>
+                        <div class="nav-level-1 toggle">扩展格式</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/one.md')">暂无内容</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </li>
 
-            <li>
-                <div class="nav-level-1 toggle">函数</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/函数.md')">函数</a></li>
-                </ul>
-            </li>
 
             <li>
-                <div class="nav-level-1 toggle">指针</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/指针.md')">指针</a></li>
-                </ul>
-            </li>
+                <div class="nav-major toggle">数据结构与算法篇</div>
+                <ul class="nav-group">
 
-            <li>
-                <div class="nav-level-1 toggle">方法与接口</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/方法与接口.md')">方法与接口</a></li>
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/泛型.md')">泛型</a></li>
-                </ul>
-            </li>
+                    <li>
+                        <div class="nav-level-1 toggle">扩展格式</div>
+                        <ul class="nav-sub">
+                            <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/one.md')">暂无内容</a></li>
+                        </ul>
+                    </li>
 
-            <li>
-                <div class="nav-level-1 toggle">错误处理</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/错误处理.md')">错误处理</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <div class="nav-level-1 toggle">并发编程</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/并发与等待组.md')">并发/等待组</a></li>
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/通道.md')">通道</a></li>
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/sync.md')">sync包</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <div class="nav-level-1 toggle">函数介绍，扩展</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/语句介绍.md')">输入输出相关/for循环</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <div class="nav-level-1 toggle">context包</div>
-                <ul class="nav-sub">
-                    <li><a href="#" class="nav-level-2" onclick="loadBlog('blogs/基础篇/context.md')">context包介绍</a></li>
                 </ul>
             </li>
 
@@ -96,12 +164,22 @@
 <script src="js/render.js"></script>
 
 <script>
-    // 点击一级标题，切换子菜单展开收起
+    // 点击一级标题，切换子菜单
     document.querySelectorAll('.nav-level-1.toggle').forEach(item => {
         item.addEventListener('click', () => {
             const subMenu = item.nextElementSibling;
             if (subMenu && subMenu.classList.contains('nav-sub')) {
                 subMenu.classList.toggle('expanded');
+            }
+        });
+    });
+
+    // 点击大标题，切换整个分组
+    document.querySelectorAll('.nav-major.toggle').forEach(item => {
+        item.addEventListener('click', () => {
+            const group = item.nextElementSibling;
+            if (group && group.classList.contains('nav-group')) {
+                group.classList.toggle('expanded');
             }
         });
     });
